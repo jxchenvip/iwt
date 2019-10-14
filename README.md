@@ -51,6 +51,6 @@ iwt.object(get(a, "b.c.e.f.g.h")); // {};
 | null(any, defaultValue)           | null                                                                                                        |
 | date(any, defaultValue)           | new Date()                                                                                                  |
 | regExp(any, defaultValue)         | new RegExp()                                                                                                |
-| symble(any, defaultValue)         | Symble('symble')                                                                                            |
+| symbol(any, defaultValue)         | Symbol('symbol')                                                                                            |
 | getValue(type, any, defaultValue) | 无                                                                                                          |
 | typeOf(any)                       | "number","string","function", "regExp", "null", "undefined", "date", "boolean", "object", "array", "symbol" |
