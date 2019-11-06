@@ -32,6 +32,9 @@ iwt.object(obj.b, { b: 1 }); // {b: 1};
 // iwt.null
 // iwt.null
 
+iwt.formatNumber(0.1+0.2) // 0.3
+iwt.foramtNumber(0.1+0.2, 2) // '0.30'
+
 const get = require("lodash/get");
 const a = {};
 iwt.object(get(a, "b.c.e.f.g.h")); // {};
@@ -54,3 +57,4 @@ iwt.object(get(a, "b.c.e.f.g.h")); // {};
 | symbol(any, defaultValue)         | Symbol('symbol')                                                                                            |
 | getValue(type, any, defaultValue) | 无                                                                                                          |
 | typeOf(any)                       | "number","string","function", "regExp", "null", "undefined", "date", "boolean", "object", "array", "symbol" |
+| formatNumber                      | number                                                                                                      |
