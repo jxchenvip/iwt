@@ -14,6 +14,7 @@ export interface iWt {
   null: (value: any, defaultValue: any) => null
   object: (value: any, defaultValue: any) => object
   symbol: (value: any, defaultValue: any) => symbol
+  formatNumber: (value: number, dig: number) => number
 }
 
 declare const iwt: iWt;

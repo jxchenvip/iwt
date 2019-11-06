@@ -1,3 +1,5 @@
+const { formatNumber } = require("./utils/formatNumber");
+
 const TYPEOF = {
   BOOLEAN: "boolean",
   NUMBER: "number",
@@ -81,5 +83,6 @@ module.exports = {
   undefined: iwt.undefined,
   null: iwt.null,
   object: iwt.object,
-  symbol: iwt.symbol
+  symbol: iwt.symbol,
+  formatNumber,
 };
